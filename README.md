@@ -10,6 +10,11 @@ You can run your slides directly using the image. The slides are mounted to the 
 docker run -v <PATH-TO-YOUR-SLIDES>:/usr/present -p 3999:8080 ghcr.io/stanislav-zeman/go-present
 ```
 
+Alternatively, you can also use the DockerHub image:
+```
+docker run -v <PATH-TO-YOUR-SLIDES>:/usr/present -p 3999:8080 standadev/go-present
+```
+
 You can also use this image as the base image in your Dockerfile: 
 ```
 FROM ghcr.io/stanislav-zeman/go-present
