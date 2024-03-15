@@ -37,6 +37,7 @@ jobs:
           images: |
             ${{ vars.DOCKERHUB_NAMESPACE }}/${{ vars.DOCKERHUB_REPOSITORY }}
             ghcr.io/${{ github.repository }}
+          tags: latest
 
       - name: Build and push
         uses: docker/build-push-action@v5
