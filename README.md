@@ -14,7 +14,8 @@ You can also use this image as the base image in your Dockerfile:
 ```
 FROM ghcr.io/stanislav-zeman/go-present
 
-COPY *.slide code images /usr/present/
+COPY *.slide /usr/present/
+COPY images /usr/present/images
 
 CMD present -http=:8080 -play=false
 ```
